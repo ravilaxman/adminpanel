@@ -1,0 +1,12 @@
+<form #userForm="ngForm" (ngSubmit)="saveUser()">
+    <div>
+        <input type="text" placeholder="id" name="id" [(ngModel)]="user.id">
+    </div>
+    <div>
+        <input type="text" placeholder="name" name="name" [(ngModel)]="user.name">
+    </div>
+    <div>
+        <input type="text" placeholder="email" name="email" [(ngModel)]="user.email">
+    </div>
+    <button type="submit">Save</button>
+</form>
